@@ -28,8 +28,8 @@
   </div>
 </nav>
 
-<div class="container">
-  <router-outlet></router-outlet>
+<div class="container" [@routeAnimation]="getAnimationData(routerOutlet)">
+  <router-outlet #routerOutlet="outlet"></router-outlet>
 </div>
 
 <router-outlet></router-outlet>
